@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         // Задание 1
@@ -30,12 +32,12 @@ public class Main {
         System.out.println();
         // Задание 4
 
-        for (int i = 0; i < 3; i++) {
-            if (apples[0] == 1 && apples[2] == 3) {
-                apples[0] += 1;
-                apples[2] += 1;
+        for (int i = 0; i < apples.length; i++) {
+            if (apples[i] % 2 != 0) {
+                apples[i] += 1;
+
             }
-            System.out.println(apples[i]);
+            System.out.print(apples[i] + " ");
         }
     }
 }
